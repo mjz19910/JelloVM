@@ -47,7 +47,7 @@ method_access_flags = [
     ("ACC_SYNTHETIC", 0x1000),
 ]
 
-def parse_flags(value: int, flags: [(str, int)]) -> [str]:
+def parse_flags(value: int, flags: [(str, int)]) -> [str]:  # type: ignore
     return [name for (name, mask) in flags if (value&mask) != 0]
 
 def parse_u1(f): return int.from_bytes(f.read(1), 'big')
