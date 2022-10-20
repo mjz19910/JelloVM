@@ -213,7 +213,7 @@ def execute_code(clazz, code: bytes):
                 if name_of_class == 'java/io/PrintStream' and name_of_member == 'println':
                     n = len(stack)
                     if len(stack) < 2:
-                        raise RuntimeError('{name_of_class}/{name_of_member} expectes 2 arguments, but provided {n}')
+                        raise RuntimeError('{name_of_class}/{name_of_member} expects 2 arguments, but provided {n}')
                     obj = stack[len(stack) - 2]
                     if obj['type'] != 'FakePrintStream':
                         raise NotImplementedError(f"Unsupported stream type {obj['type']}")
