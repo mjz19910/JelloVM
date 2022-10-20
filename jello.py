@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
+import io
 import pprint
 import sys
-import io
 
 pp = pprint.PrettyPrinter()
 
