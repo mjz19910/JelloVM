@@ -7,6 +7,7 @@ JVM in Python that can only run ["Hello, World"](https://en.wikipedia.org/wiki/%
 ```console
 $ javac Main.java
 $ ./jello.py Main.class
+Hello world
 ```
 
 ## References
